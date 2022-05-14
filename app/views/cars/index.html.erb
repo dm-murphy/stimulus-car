@@ -1,6 +1,11 @@
 <h2>Stimulus Cars</h2>
 
-<div data-controller="hello">
-  <input type="text">
-  <button data-action="click->hello#greet">Greet</button>
+<div data-controller="toggle">
+  <input data-toggle-target="source" type="text" value="I'm a copy" readonly>
+  <button data-action="toggle#copy">Copy Me to Clipboard</button>
+</div>
+
+<div data-controller="toggle">
+  <div  data-toggle-target="hideable">Hide Me</div>
+  <button data-action="toggle#hide">Hide</button>
 </div>
